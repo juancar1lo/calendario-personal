@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+
+<body>
+    <div class="calendar-container">
+        <div class="header">
+            <button onclick="prevYear()">≪</button>
+            <button onclick="prevMonth()">◄</button>
+            <h2 id="monthYear"></h2>
+            <button onclick="nextMonth()">►</button>
+            <button onclick="nextYear()">≫</button>
+        </div>
+        <div class="days" id="calendarDays">
+            <!-- Los días se generarán con JS -->
+        </div>
+        <input type="text" id="eventInput" placeholder="Añadir evento al día seleccionado">
+    </div>
+    <div class="agenda" id="agenda">
+        <h3>Agenda del Mes</h3>
+        <ul id="eventList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

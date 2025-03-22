@@ -1,0 +1,20 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <!-- Fondo azul fuerte -->
+    <rect width="32" height="32" fill="#003087"/>
+    
+    <!-- Marco del calendario en blanco -->
+    <rect x="4" y="6" width="24" height="20" fill="none" stroke="#ffffff" stroke-width="2"/>
+    
+    <!-- Líneas superiores simulando las anillas del calendario -->
+    <rect x="8" y="2" width="4" height="4" fill="#ffffff"/>
+    <rect x="20" y="2" width="4" height="4" fill="#ffffff"/>
+    
+    <!-- Línea horizontal separando el encabezado -->
+    <line x1="4" y1="10" x2="28" y2="10" stroke="#ffffff" stroke-width="1"/>
+    
+    <!-- Cuadrícula simulando días -->
+    <rect x="6" y="12" width="20" height="12" fill="none" stroke="#ffffff" stroke-width="0.5"/>
+    
+    <!-- Día actual resaltado en rojo -->
+    <rect x="18" y="18" width="4" height="4" fill="#ff4444" stroke="#ffffff" stroke-width="0.5"/>
+</svg>

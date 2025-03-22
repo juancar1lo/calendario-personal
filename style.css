@@ -1,0 +1,112 @@
+body {
+    background-color: #003087;
+    /* Azul fuerte */
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 20px;
+    gap: 20px;
+}
+
+.calendar-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+}
+
+.day {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.day:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.current-day {
+    background-color: #ff4444 !important;
+    /* Fondo rojo más oscuro */
+    color: white !important;
+    /* Texto blanco */
+    border: 2px solid white !important;
+    /* Borde blanco grueso para contraste */
+    font-weight: bold;
+    /* Texto en negrita */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    /* Sombra para resaltar */
+}
+
+.event-day {
+    position: relative;
+}
+
+.event-day::after {
+    content: '•';
+    color: #ffcc00;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.weekend-column {
+    background-color: #ff5555;
+    /* Fondo rojo para fines de semana */
+}
+
+button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+#eventInput {
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.agenda {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.agenda h3 {
+    margin-top: 0;
+}
+
+.agenda ul {
+    list-style: none;
+    padding: 0;
+    color: #ffcc00;
+    /* Texto amarillo para eventos */
+}
+
+.agenda li {
+    margin-bottom: 10px;
+}
